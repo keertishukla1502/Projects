@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketAspNetMVC", "TicketAspNetMVC\TicketAspNetMVC.csproj", "{5814E7E4-6180-4610-8B36-5FEE070077E1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2890C95F-C9B2-48ED-8CC0-28710AC79766} = {2890C95F-C9B2-48ED-8CC0-28710AC79766}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketService", "TicketService\TicketService.csproj", "{2890C95F-C9B2-48ED-8CC0-28710AC79766}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5814E7E4-6180-4610-8B36-5FEE070077E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5814E7E4-6180-4610-8B36-5FEE070077E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5814E7E4-6180-4610-8B36-5FEE070077E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5814E7E4-6180-4610-8B36-5FEE070077E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2890C95F-C9B2-48ED-8CC0-28710AC79766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2890C95F-C9B2-48ED-8CC0-28710AC79766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2890C95F-C9B2-48ED-8CC0-28710AC79766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2890C95F-C9B2-48ED-8CC0-28710AC79766}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9CC0AD8-30A2-49BB-B6BE-D24B293FFC00}
+	EndGlobalSection
+EndGlobal

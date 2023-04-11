@@ -1,0 +1,14 @@
+C:\Users\cis\source\repos\K_PrintUsingStar\StringCharecterCount\bin\Debug\StringCharecterCount.exe.config
+C:\Users\cis\source\repos\K_PrintUsingStar\StringCharecterCount\bin\Debug\StringCharecterCount.exe
+C:\Users\cis\source\repos\K_PrintUsingStar\StringCharecterCount\bin\Debug\StringCharecterCount.pdb
+C:\Users\cis\source\repos\K_PrintUsingStar\StringCharecterCount\obj\Debug\StringCharecterCount.csprojAssemblyReference.cache
+C:\Users\cis\source\repos\K_PrintUsingStar\StringCharecterCount\obj\Debug\StringCharecterCount.csproj.CoreCompileInputs.cache
+C:\Users\cis\source\repos\K_PrintUsingStar\StringCharecterCount\obj\Debug\StringCharecterCount.exe
+C:\Users\cis\source\repos\K_PrintUsingStar\StringCharecterCount\obj\Debug\StringCharecterCount.pdb
+\\192.168.2.122\Keerti\VisualStdio2017\K_PrintUsingStar\StringCharecterCount\bin\Debug\StringCharecterCount.exe.config
+\\192.168.2.122\Keerti\VisualStdio2017\K_PrintUsingStar\StringCharecterCount\bin\Debug\StringCharecterCount.exe
+\\192.168.2.122\Keerti\VisualStdio2017\K_PrintUsingStar\StringCharecterCount\bin\Debug\StringCharecterCount.pdb
+\\192.168.2.122\Keerti\VisualStdio2017\K_PrintUsingStar\StringCharecterCount\obj\Debug\StringCharecterCount.csprojAssemblyReference.cache
+\\192.168.2.122\Keerti\VisualStdio2017\K_PrintUsingStar\StringCharecterCount\obj\Debug\StringCharecterCount.csproj.CoreCompileInputs.cache
+\\192.168.2.122\Keerti\VisualStdio2017\K_PrintUsingStar\StringCharecterCount\obj\Debug\StringCharecterCount.exe
+\\192.168.2.122\Keerti\VisualStdio2017\K_PrintUsingStar\StringCharecterCount\obj\Debug\StringCharecterCount.pdb

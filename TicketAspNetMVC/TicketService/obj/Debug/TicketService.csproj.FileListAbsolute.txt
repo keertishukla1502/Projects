@@ -1,0 +1,12 @@
+C:\Users\keerti.s(2331)\source\repos\TicketAspNetMVC\TicketService\bin\TicketService.dll.config
+C:\Users\keerti.s(2331)\source\repos\TicketAspNetMVC\TicketService\bin\TicketService.dll
+C:\Users\keerti.s(2331)\source\repos\TicketAspNetMVC\TicketService\bin\TicketService.pdb
+C:\Users\keerti.s(2331)\source\repos\TicketAspNetMVC\TicketService\obj\Debug\TicketService.csproj.AssemblyReference.cache
+C:\Users\keerti.s(2331)\source\repos\TicketAspNetMVC\TicketService\obj\Debug\TicketService.csproj.CoreCompileInputs.cache
+C:\Users\keerti.s(2331)\source\repos\TicketAspNetMVC\TicketService\obj\Debug\TicketService.dll
+C:\Users\keerti.s(2331)\source\repos\TicketAspNetMVC\TicketService\obj\Debug\TicketService.pdb
+C:\Users\keerti.s(2331)\source\repos\TicketAspNetMVC\TicketService\bin\PagedList.dll
+C:\Users\keerti.s(2331)\source\repos\TicketAspNetMVC\TicketService\bin\PagedList.Mvc.dll
+C:\Users\keerti.s(2331)\source\repos\TicketAspNetMVC\TicketService\bin\PagedList.xml
+C:\Users\keerti.s(2331)\source\repos\TicketAspNetMVC\TicketService\bin\PagedList.Mvc.xml
+C:\Users\keerti.s(2331)\source\repos\TicketAspNetMVC\TicketService\obj\Debug\TicketService.csproj.CopyComplete

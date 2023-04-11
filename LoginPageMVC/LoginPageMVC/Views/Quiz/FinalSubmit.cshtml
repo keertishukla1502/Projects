@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "FinalSubmit";
+}
+
+@*<script src="~/Scripts/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+
+   
+     $(document).ready(function () {
+        alert('hii keerti');
+        alert(@TempData["Result"];
+    });
+
+</script>*@
+
+<br />
+@if (Model <= 40) {
+<h4 style="color:Tomato;">@TempData["Result"]</h4>
+}
+else {<h4  style="color:mediumseagreen;">@TempData["Result"]</h4> }
+<h1>Thank You!</h1>
+
+
+
+<div>
+    @Html.ActionLink("Back to Home Page", "Index", "Home")
+</div>
+

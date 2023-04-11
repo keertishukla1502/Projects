@@ -1,0 +1,103 @@
+﻿@model LoginPageMVC.Models.QuestionModel
+
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/Scripts/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        if ($('#hiddenid1').val() == $('#lastPage').val()) {
+            $('#btnFinalSubmit').show();
+
+        } else
+            $('#btnFinalSubmit').hide();
+
+
+        $('#btnSubmit').on("click", function () {
+            $('#BtnType').val('btnSubmit');
+
+
+        });
+
+        $('#btnNext').on("click", function () {
+            $('#BtnType').val('btnNext');
+
+
+        });
+        $('#btnPrevious').on("click", function () {
+            $('#BtnType').val('btnPrevious');
+
+        });
+        $('#btnFinalSubmit').on("click", function () {
+            $('#BtnType').val('btnFinalSubmit');
+
+
+        });
+    });
+
+</script>
+
+
+<h2>Question Answer</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.Hidden("BtnType")
+
+    if (TempData["lastPage"]!=null)
+    {
+        @Html.Hidden("lastPage", @TempData["lastPage"])
+    }
+
+    @Html.HiddenFor(model => model.CurrectAnswer, Model.CurrectAnswer)
+    @Html.HiddenFor(model => model.QuestionId, Model.QuestionId)
+    <div class="form-horizontal">
+        <table class="table">
+            <div class="form-group">
+                <tr>
+                    <th colspan="2">
+
+                        ( @Html.DisplayFor(model => model.QuestionId, new { id = "hiddenid" }))
+                        @Html.HiddenFor(model => model.Text, new { Value = Model.QuestionId, id = "hiddenid1" })
+                        @Html.DisplayFor(model => model.Text, Model.Text)
+                    </th>
+
+                </tr>
+            </div>
+            <div class="form-group">
+
+                @foreach (var answer in Model.Option)
+                {
+                    <tr>
+                        <td>
+                            @Html.HiddenFor(x => answer.Options)
+                            @Html.DisplayFor(x => answer.Options)
+                        </td>
+                        <td>
+
+                            @Html.RadioButtonFor(model => model.Options, answer.Options)
+
+
+                        </td>
+                    </tr>
+                }
+            </div>
+            @Html.ValidationMessageFor(model => model.Options, "", new { @class = "text-danger" })
+        </table>
+
+        <br />
+        <input id="btnSubmit" type="submit" value="Submit Answer" name="SubmitAns" />
+        <input id="btnPrevious" type="submit" value="Previous" name="nextPrevious" />
+        <input id="btnNext" type="submit" value="Next" name="nextPrevious" />
+        <input id="btnFinalSubmit" type="submit" value="Final Submit" name="FinalSubmit" />
+    </div>
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

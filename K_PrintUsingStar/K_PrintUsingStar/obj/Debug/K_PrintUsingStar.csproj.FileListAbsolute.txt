@@ -1,0 +1,6 @@
+C:\Users\cis\source\repos\K_PrintUsingStar\K_PrintUsingStar\bin\Debug\K_PrintUsingStar.exe.config
+C:\Users\cis\source\repos\K_PrintUsingStar\K_PrintUsingStar\bin\Debug\K_PrintUsingStar.exe
+C:\Users\cis\source\repos\K_PrintUsingStar\K_PrintUsingStar\bin\Debug\K_PrintUsingStar.pdb
+C:\Users\cis\source\repos\K_PrintUsingStar\K_PrintUsingStar\obj\Debug\K_PrintUsingStar.csproj.CoreCompileInputs.cache
+C:\Users\cis\source\repos\K_PrintUsingStar\K_PrintUsingStar\obj\Debug\K_PrintUsingStar.exe
+C:\Users\cis\source\repos\K_PrintUsingStar\K_PrintUsingStar\obj\Debug\K_PrintUsingStar.pdb

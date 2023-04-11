@@ -1,0 +1,438 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "ActionParameterAlias/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/ActionParameterAlias.dll": {}
+        },
+        "runtime": {
+          "lib/net40/ActionParameterAlias.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Mvc/5.2.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.9, 3.3.0)",
+          "Microsoft.AspNet.WebPages": "[3.2.9, 3.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Mvc.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Mvc.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.Razor/3.2.9": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Razor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Razor.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "4.5.11"
+        },
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.0.0"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebPages/3.2.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.9, 3.3.0)",
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/System.Web.Helpers.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.Deployment.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.Razor.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.dll": {
+            "related": ".Deployment.xml;.Razor.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Helpers.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.Deployment.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.Razor.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.dll": {
+            "related": ".Deployment.xml;.Razor.xml;.xml"
+          }
+        }
+      },
+      "Microsoft.Web.Infrastructure/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        }
+      },
+      "Newtonsoft.Json/4.5.11": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net40/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ActionParameterAlias/5.0.0": {
+      "sha512": "hPtM0ycUAJghoT0XIljwMbwMOuX2mHNqYTUotJX0zkrINMTCxD0JCOb8aKKSbVMsLNeZMB+TWWpmxVUSOm/cmQ==",
+      "type": "package",
+      "path": "actionparameteralias/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NuGet.exe",
+        "actionparameteralias.5.0.0.nupkg.sha512",
+        "actionparameteralias.nuspec",
+        "lib/net40/ActionParameterAlias.dll",
+        "pack.bat"
+      ]
+    },
+    "Microsoft.AspNet.Mvc/5.2.9": {
+      "sha512": "bcekKshCAh7kTWSMZPavQStSZQF/QmjEjO2gVWGITEd0/t5eRlb+ZLDE+az2qY1bZ8L6Hz0OCNeS0uzXtJcK5w==",
+      "type": "package",
+      "path": "microsoft.aspnet.mvc/5.2.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Web.config.install.xdt",
+        "Content/Web.config.uninstall.xdt",
+        "NET.icon.png",
+        "NET_Library_EULA_ENU.txt",
+        "lib/net45/System.Web.Mvc.dll",
+        "lib/net45/System.Web.Mvc.xml",
+        "microsoft.aspnet.mvc.5.2.9.nupkg.sha512",
+        "microsoft.aspnet.mvc.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.Razor/3.2.9": {
+      "sha512": "QOJEnEw3xp+t5lMvYR5nGCF4CfZpHqr2p8uZOBEgDZoB6r2txtSj6581YNr+/dOHjI3YRlo1QAKGQoSohbQ/KA==",
+      "type": "package",
+      "path": "microsoft.aspnet.razor/3.2.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NET.icon.png",
+        "NET_Library_EULA_ENU.txt",
+        "lib/net45/System.Web.Razor.dll",
+        "lib/net45/System.Web.Razor.xml",
+        "microsoft.aspnet.razor.3.2.9.nupkg.sha512",
+        "microsoft.aspnet.razor.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.Client/5.0.0": {
+      "sha512": "OMTp9ot40TZgZxnFO+S0ac0EY5CtQs6KTHkMSHmNFDc+a0tWMCsSBuOG6HoH9+G95wNhEfZrZ20btAsHMlQe7w==",
+      "type": "package",
+      "path": "microsoft.aspnet.webapi.client/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/System.Net.Http.Formatting.dll",
+        "lib/net45/System.Net.Http.Formatting.xml",
+        "lib/portable-wp8+netcore45+net45/System.Net.Http.Formatting.dll",
+        "lib/portable-wp8+netcore45+net45/System.Net.Http.Formatting.xml",
+        "microsoft.aspnet.webapi.client.5.0.0.nupkg.sha512",
+        "microsoft.aspnet.webapi.client.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.Core/5.0.0": {
+      "sha512": "ZOVLLtFpSM8nkJopUM9upbJEUkAUS60j6Sj1hDKewHaekWMUnnoMX/i3Ee+7KgxMGk13yxxQRHtSwcjh1JpJ4w==",
+      "type": "package",
+      "path": "microsoft.aspnet.webapi.core/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/web.config.transform",
+        "lib/net45/System.Web.Http.dll",
+        "lib/net45/System.Web.Http.xml",
+        "microsoft.aspnet.webapi.core.5.0.0.nupkg.sha512",
+        "microsoft.aspnet.webapi.core.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebPages/3.2.9": {
+      "sha512": "yByb721lwv8YFsx1oKA5CLKXa89XVbVMkPafS4bg/bPelBEgChq/coFBQEkA4kwcabG7AR56w3vapnoZUfr2Cw==",
+      "type": "package",
+      "path": "microsoft.aspnet.webpages/3.2.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Web.config.install.xdt",
+        "Content/Web.config.uninstall.xdt",
+        "NET.icon.png",
+        "NET_Library_EULA_ENU.txt",
+        "lib/net45/System.Web.Helpers.dll",
+        "lib/net45/System.Web.Helpers.xml",
+        "lib/net45/System.Web.WebPages.Deployment.dll",
+        "lib/net45/System.Web.WebPages.Deployment.xml",
+        "lib/net45/System.Web.WebPages.Razor.dll",
+        "lib/net45/System.Web.WebPages.Razor.xml",
+        "lib/net45/System.Web.WebPages.dll",
+        "lib/net45/System.Web.WebPages.xml",
+        "microsoft.aspnet.webpages.3.2.9.nupkg.sha512",
+        "microsoft.aspnet.webpages.nuspec"
+      ]
+    },
+    "Microsoft.Web.Infrastructure/1.0.0": {
+      "sha512": "FNmvLn5m2LTU/Rs2KWVo0SIIh9Ek+U0ojex7xeDaSHw/zgEP77A8vY5cVWgUtBGS8MJfDGNn8rpXJWEIQaPwTg==",
+      "type": "package",
+      "path": "microsoft.web.infrastructure/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Microsoft.Web.Infrastructure.dll",
+        "microsoft.web.infrastructure.1.0.0.nupkg.sha512",
+        "microsoft.web.infrastructure.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/4.5.11": {
+      "sha512": "IZ0vmfvcJrUONMIG3St+1EzSlnHc9qFY6/FU2YMHNXaGtdm6sSwIUAdXPAw1k3IwpxjVmZ0w9Pzszd8GkyrpFA==",
+      "type": "package",
+      "path": "newtonsoft.json/4.5.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl4+wp7+win8/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl4+wp7+win8/Newtonsoft.Json.xml",
+        "lib/sl3-wp/Newtonsoft.Json.dll",
+        "lib/sl3-wp/Newtonsoft.Json.xml",
+        "lib/sl4-windowsphone71/Newtonsoft.Json.dll",
+        "lib/sl4-windowsphone71/Newtonsoft.Json.xml",
+        "lib/sl4/Newtonsoft.Json.dll",
+        "lib/sl4/Newtonsoft.Json.xml",
+        "lib/winrt45/Newtonsoft.Json.dll",
+        "lib/winrt45/Newtonsoft.Json.xml",
+        "newtonsoft.json.4.5.11.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "ActionParameterAlias >= 5.0.0",
+      "Microsoft.AspNet.Mvc >= 5.2.9",
+      "Microsoft.AspNet.WebApi.Core >= 5.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\keerti.s(2331)\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Keerti\\MyWorkingProjects\\ActionFilterQueryStringPOC\\ActionFilterQueryStringPOC\\ActionFilterQueryStringPOC.csproj",
+      "projectName": "ActionFilterQueryStringPOC",
+      "projectPath": "D:\\Keerti\\MyWorkingProjects\\ActionFilterQueryStringPOC\\ActionFilterQueryStringPOC\\ActionFilterQueryStringPOC.csproj",
+      "packagesPath": "C:\\Users\\keerti.s(2331)\\.nuget\\packages\\",
+      "outputPath": "D:\\Keerti\\MyWorkingProjects\\ActionFilterQueryStringPOC\\ActionFilterQueryStringPOC\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\keerti.s(2331)\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "ActionParameterAlias": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          },
+          "Microsoft.AspNet.Mvc": {
+            "target": "Package",
+            "version": "[5.2.9, )"
+          },
+          "Microsoft.AspNet.WebApi.Core": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ActionParameterAlias 5.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "ActionParameterAlias",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.Mvc 5.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.Mvc",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.Razor 3.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.Razor",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.WebApi.Client 5.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.WebApi.Client",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.WebApi.Core 5.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.WebApi.Core",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.WebPages 3.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.WebPages",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Web.Infrastructure 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Web.Infrastructure",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Newtonsoft.Json 4.5.11' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}

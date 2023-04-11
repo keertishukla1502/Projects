@@ -1,0 +1,174 @@
+﻿@model IEnumerable<ControllerToViewSendId.Models.Tickets>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style type="text/css">
+    .SelectedBackgroundColor {
+        background-color: #5bc0de;
+    }
+
+    .disableColor {
+        background-color: #dde;
+        color: light-gray;
+    }
+
+    table tbody tr:hover {
+        background-color: #ddd;
+        cursor: pointer;
+    }
+</style>
+
+<div class="row">
+    <div class="col-md-12">
+
+
+
+        <p>
+            @*@Html.ActionLink("Create New", "Create")*@
+        </p>
+        <table id="ticketData" class="table">
+            <tr class="HeaderClass">
+                <th style='display:none'>
+                    TicketId
+                </th>
+                <th>
+                    Create Date
+                </th>
+                <th>
+                    A/c Number
+                </th>
+                <th>
+                    Phone_Number
+                </th>
+                <th>
+                    CName
+                </th>
+                <th>
+                    Selected
+                </th>
+                <th>
+                    Description
+                </th>
+
+            </tr>
+            <tbody>
+                @if (Model != null)
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr @(item.Selected == true ? String.Empty : "class=disableColor" )>
+                            <td style='display:none'>
+                                @Html.DisplayFor(modelItem => item.Ticket_ID)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Date_Entered)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Account_Number)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Phone_Number)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Customer_Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Selected)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Description)
+                            </td>
+
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <button class="btn btn-Primary IsSelected" disabled="true" onclick="closeSelected()"> Close Selected Ticket</button>
+        </div>
+        <div class="col-md-4 center">
+            Ticket Count - @ViewBag.TotalTicket
+        </div>
+
+        <div class="col-md-3">
+            <button class="btn btn-info" type="button" id="addressSearch"
+                    onclick="location.href='@Url.Action("Index", "Home")'">
+                Refresh
+            </button>
+
+        </div>
+    </div>
+
+</div>
+@*<script src="http://code.jquery.com/jquery-1.10.2.js"></script>*@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+    var ticketId = '0'
+    var IDs = new Array();
+    $("#ticketData tbody tr").not(':first').hover(
+        function () {
+           
+            $(this).css("background", "#ddd");
+        },
+        function () {
+           
+            $(this).css("background", "");
+        });
+
+    $('#ticketData tbody tr').click(function () {
+        var values = $(this).find('td:first').html();
+        if ($(this).attr('class') == undefined || $(this).attr('class') == "") {
+            /*value = $(this).find('td:first').html();*/
+            $(this).addClass("SelectedBackgroundColor");
+            $(".IsSelected").prop('disabled', false);
+           
+
+            var selectedID = { id: values};
+  
+          
+            IDs.push(selectedID.id);
+          
+            
+        } else {
+            $(this).removeClass("SelectedBackgroundColor");
+            var selectedID = { id: values };
+            IDs.pop(selectedID.id);
+           
+        }
+    });
+    
+    function closeSelected() {
+
+        console.log("IDs" + IDs)
+
+
+        $.ajax({
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            type: 'GET',
+            url: '/Default/CloseTicket',
+            data: { param2: IDs },
+            traditional: true,
+            success: function (data) {
+                console.log(data)
+                if (data == "true") {
+                    location.href = "/Default/Index";
+                }
+                else {
+                    alert('something wrong')
+                }
+
+            },
+            error: function (error) {
+                alert('something wrong')
+            }
+        });
+
+    }
+</script>  

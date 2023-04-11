@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="90622304-f307-43b9-a613-586fbbbf66a6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:63413/TicketWCF.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TicketWCF.wsdl" MetadataType="Wsdl" ID="f7bb407d-448d-4f50-9287-dd6139f50f53" SourceId="1" SourceUrl="http://localhost:63413/TicketWCF.svc?wsdl" />
+    <MetadataFile FileName="TicketWCF.disco" MetadataType="Disco" ID="f8a29d4a-98f7-44da-bc38-707cfa94eeec" SourceId="1" SourceUrl="http://localhost:63413/TicketWCF.svc?disco" />
+    <MetadataFile FileName="TicketWCF.xsd" MetadataType="Schema" ID="2fd7ebd7-49f8-4642-b483-e6f7a8e85546" SourceId="1" SourceUrl="http://localhost:63413/TicketWCF.svc?xsd=xsd0" />
+    <MetadataFile FileName="TicketWCF1.xsd" MetadataType="Schema" ID="aa0c0b61-f652-4151-bb9a-3fd9e4d4b6f3" SourceId="1" SourceUrl="http://localhost:63413/TicketWCF.svc?xsd=xsd1" />
+    <MetadataFile FileName="TicketWCF2.xsd" MetadataType="Schema" ID="71ba2f7f-2b49-41cc-abed-50a0d88f78e6" SourceId="1" SourceUrl="http://localhost:63413/TicketWCF.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,209 @@
+﻿@model LoginPageMVC.Models.QuestionModel
+
+@{
+    ViewBag.Title = "AdminView";
+}
+
+
+<script src="~/Scripts/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $('#btnAddQuestions').hide();
+        $('#CurrectAnswer').hide();
+
+        $('#btnSubmitOption').on("click", function () {
+            $('#BtnType').val('btnSubmitOption');
+          
+        });
+
+
+        $(".close").click(function () {
+            $('#BtnType').val('close');
+            var i = $(this).attr('id');          
+            var t = $("#" + i).text();         
+            $('#CancleOption').val(t);
+        });
+      
+        $('#btnNext').on("click", function () {
+
+
+
+            if ($('#optioncount').val() <= 1) {
+                alert("Minimum 2 options are required ")
+            }
+            else
+            {
+                if ($('#FirstOptions').val() != null && $('#FirstOptions').val() != '')
+                {
+                    $('#BtnType').val('btnNext');
+                    $('#CurrectAnswer').show();
+                    $('#btnAddQuestions').show();
+                    $('#Text').hide();
+                    $('#Options').hide();
+                    $('#tbl').hide();
+                    $('#btnNext').hide();
+                }
+                else
+                {
+                    alert("please inter Value ")
+                } 
+            } 
+          
+            
+        });
+
+        $('#btnAddQuestions').on("click", function () {
+            $('#BtnType').val('btnAddQuestions');
+            
+
+        });
+
+    
+
+        $("#textboxText").removeAttr('readonly');
+        $("#textboxCurrectAnswer").removeAttr('readonly');
+
+        if ($('#FirstOptions').val() != null && $('#FirstOptions').val() != '') {
+            $("#textboxText").attr('readonly', 'readonly');
+            $("#textboxCurrectAnswer").attr('readonly', 'readonly');
+        } 
+
+
+    });
+
+
+</script>
+
+
+
+<div class="row">
+    <div class="col-md-10">
+
+        <h2>AdminView</h2>
+
+        @if (TempData["QuestionInserted"] != null)
+        {
+            <h4 style="color:Tomato;">@TempData["QuestionInserted"]</h4>
+        }
+
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            @Html.Hidden("BtnType")
+            @Html.Hidden("CancleOption")
+          
+
+
+            <div class="form-horizontal">
+
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="form-group" id="Text">
+                    @Html.LabelFor(model => model.Text, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Text, new { htmlAttributes = new { @class = "form-control", id = "textboxText" } })
+                        @Html.ValidationMessageFor(model => model.Text, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group" id="CurrectAnswer">
+                    @Html.LabelFor(model => model.CurrectAnswer, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+
+                        @if (Model.Option != null)
+                        {
+
+
+                            <select name="CurrectAnswer">
+                                <option value="">Select Answer</option>
+
+                                @foreach (var ans in Model.Option)
+                                {
+                                    <option value=@ans.Options>@ans.Options</option>
+
+                                }
+
+                            </select>
+
+
+
+
+
+                            @*@Html.DropDownListFor(model => model.CurrectAnswer, new SelectList(Model.Option[0].Options,
+
+                    Model.Option,"Options"), "Select Answer", new { @class = "form-control" })*@
+
+                        }
+                    </div>
+                </div>
+
+
+                <div class="form-group" id="Options">
+                    @Html.LabelFor(model => model.Options, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Options, new { htmlAttributes = new { @class = "form-control", @id = "Options" } })
+                        @Html.ValidationMessageFor(model => model.Options, "", new { @class = "text-danger" })
+                        <input id="btnSubmitOption" class="btn btn-primary" type="submit" value="Add Options" name="SubmitAns" />
+                    </div>
+
+                </div>
+                @Html.HiddenFor(model => model.Options, new { Value = Model.Option, id = "hdnOptions" })
+             
+              
+                <div class="form-group" id="tbl">
+
+                    @if (Model.Option != null)
+                    {
+
+                        <h4> Your selected Options List Are-</h4>
+                        var i = 1;
+                        var j = 0;
+                    var k = 0;
+                        <br />
+                        <table id="table">
+
+                            @foreach (var answer in Model.Option)
+                            {
+                                <tr>
+                                    <td id="@(j)" class="ansid"> @(i++) </td>
+                                    <td> )  </td>
+                                    <td id="@(j)" class="ans"> @answer.Options </td>
+                                    <td> </td>
+                                    <td>
+
+                                        @Html.HiddenFor(model => model.Option, new { Value = Model.Option[j].Options, id = "FirstOptions" })
+                                        <button type="submit" class="close" aria-label="Close" id="@(j)">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                j++;
+                                k++;
+                            }
+                            @Html.Hidden("optioncount", k)
+
+                        </table>
+                    }
+                </div>
+
+                <input id="btnNext" class="btn btn-primary" type="button" value="Next" name="Next" />
+                <input id="btnAddQuestions" class="btn btn-primary" type="submit" value="Add Questions" name="AddQuestion" />
+                @*<input id="btnFinalSubmitQuestions" type="submit" value="Final Submit" name="FinalSubmitQuestions" />*@
+            </div>
+
+        }
+
+
+        <div>
+            @Html.ActionLink("Back to Home Page", "Index", "Home")
+        </div>
+    </div>
+</div>
+            @section Scripts {
+                @Scripts.Render("~/bundles/jqueryval")
+            }

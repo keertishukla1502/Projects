@@ -1,0 +1,14 @@
+C:\Users\cis\source\repos\K_PrintUsingStar\starPrintUsingStar\bin\Debug\starPrintUsingStar.exe.config
+C:\Users\cis\source\repos\K_PrintUsingStar\starPrintUsingStar\bin\Debug\starPrintUsingStar.exe
+C:\Users\cis\source\repos\K_PrintUsingStar\starPrintUsingStar\bin\Debug\starPrintUsingStar.pdb
+C:\Users\cis\source\repos\K_PrintUsingStar\starPrintUsingStar\obj\Debug\starPrintUsingStar.csprojAssemblyReference.cache
+C:\Users\cis\source\repos\K_PrintUsingStar\starPrintUsingStar\obj\Debug\starPrintUsingStar.csproj.CoreCompileInputs.cache
+C:\Users\cis\source\repos\K_PrintUsingStar\starPrintUsingStar\obj\Debug\starPrintUsingStar.exe
+C:\Users\cis\source\repos\K_PrintUsingStar\starPrintUsingStar\obj\Debug\starPrintUsingStar.pdb
+D:\Keerti\VisualStdio2017\K_PrintUsingStar\starPrintUsingStar\bin\Debug\starPrintUsingStar.exe.config
+D:\Keerti\VisualStdio2017\K_PrintUsingStar\starPrintUsingStar\bin\Debug\starPrintUsingStar.exe
+D:\Keerti\VisualStdio2017\K_PrintUsingStar\starPrintUsingStar\bin\Debug\starPrintUsingStar.pdb
+D:\Keerti\VisualStdio2017\K_PrintUsingStar\starPrintUsingStar\obj\Debug\starPrintUsingStar.csproj.AssemblyReference.cache
+D:\Keerti\VisualStdio2017\K_PrintUsingStar\starPrintUsingStar\obj\Debug\starPrintUsingStar.csproj.CoreCompileInputs.cache
+D:\Keerti\VisualStdio2017\K_PrintUsingStar\starPrintUsingStar\obj\Debug\starPrintUsingStar.exe
+D:\Keerti\VisualStdio2017\K_PrintUsingStar\starPrintUsingStar\obj\Debug\starPrintUsingStar.pdb
